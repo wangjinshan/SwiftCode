@@ -1,0 +1,29 @@
+PODS:
+  - ClipImageBrowser (0.0.1)
+  - Masonry (1.1.0)
+  - OCImport (0.0.1):
+    - Masonry
+
+DEPENDENCIES:
+  - ClipImageBrowser (from `submodules/ClipImageBrowser`)
+  - Masonry
+  - OCImport (from `submodules/OCImport`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  ClipImageBrowser:
+    :path: submodules/ClipImageBrowser
+  OCImport:
+    :path: submodules/OCImport
+
+SPEC CHECKSUMS:
+  ClipImageBrowser: 8f9ef21b27bd59f0771ba7fb52c49115ed39cbdf
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCImport: f96ece08ce05fbcb9721d6d98cb8a4c404ab86cf
+
+PODFILE CHECKSUM: 5a5f4a30c0e8a616c244007b995fdd7404a4e254
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module ClipImageBrowser {
+  umbrella header "ClipImageBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module OCImport {
+  umbrella header "OCImport-umbrella.h"
+
+  export *
+  module * { export * }
+}

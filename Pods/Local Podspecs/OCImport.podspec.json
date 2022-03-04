@@ -1,0 +1,30 @@
+{
+  "name": "OCImport",
+  "version": "0.0.1",
+  "summary": "A short description of OCImport.",
+  "description": "图片裁剪框架, 可以进行单图裁剪多图裁剪",
+  "homepage": "http://wjs/OCImport",
+  "license": "MIT",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "authors": {
+    "山神": "1096452045@qq.com"
+  },
+  "source": {
+    "git": "http://wjs/OCImport.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "OCImport",
+    "OCImport/**/*.{h, m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "resources": "OCImport/*.bundle",
+  "static_framework": true,
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
+}
