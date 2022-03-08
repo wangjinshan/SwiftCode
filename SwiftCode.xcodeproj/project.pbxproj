@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4155A16827D5E66000FFCD1F /* CrashDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155A16627D5E66000FFCD1F /* CrashDemoController.swift */; };
+		4155A16927D5E66000FFCD1F /* CrashDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4155A16727D5E66000FFCD1F /* CrashDemoController.xib */; };
+		4155A16D27D5F58500FFCD1F /* NSString+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4155A16C27D5F58500FFCD1F /* NSString+Demo.m */; };
 		41D5EB8027D1B791005DCC58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EB7F27D1B791005DCC58 /* AppDelegate.m */; };
 		41D5EB8327D1B791005DCC58 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EB8227D1B791005DCC58 /* SceneDelegate.m */; };
 		41D5EB8627D1B791005DCC58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EB8527D1B791005DCC58 /* ViewController.m */; };
@@ -46,6 +49,10 @@
 		004CE4F72E002A4745B9C892 /* Pods-SwiftCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCode.debug.xcconfig"; path = "Target Support Files/Pods-SwiftCode/Pods-SwiftCode.debug.xcconfig"; sourceTree = "<group>"; };
 		21772AAED1F500BCC1CDD97B /* Pods_SwiftCode_SwiftCodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCode_SwiftCodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C25546DE940B1A075D7E586 /* Pods_SwiftCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4155A16627D5E66000FFCD1F /* CrashDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashDemoController.swift; sourceTree = "<group>"; };
+		4155A16727D5E66000FFCD1F /* CrashDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrashDemoController.xib; sourceTree = "<group>"; };
+		4155A16B27D5F58500FFCD1F /* NSString+Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Demo.h"; sourceTree = "<group>"; };
+		4155A16C27D5F58500FFCD1F /* NSString+Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Demo.m"; sourceTree = "<group>"; };
 		41D5EB7B27D1B791005DCC58 /* SwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D5EB7E27D1B791005DCC58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41D5EB7F27D1B791005DCC58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,8 +120,16 @@
 				69CDCF3087DA54E20FCEB3B6 /* Pods-SwiftCodeTests.debug.xcconfig */,
 				DF10106A549BD31AE1EEAA0F /* Pods-SwiftCodeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4155A16A27D5F55400FFCD1F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4155A16B27D5F58500FFCD1F /* NSString+Demo.h */,
+				4155A16C27D5F58500FFCD1F /* NSString+Demo.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		41D5EB7227D1B791005DCC58 = {
@@ -142,15 +157,18 @@
 		41D5EB7D27D1B791005DCC58 /* SwiftCode */ = {
 			isa = PBXGroup;
 			children = (
+				4155A16A27D5F55400FFCD1F /* Extension */,
 				41D5EB7E27D1B791005DCC58 /* AppDelegate.h */,
 				41D5EB7F27D1B791005DCC58 /* AppDelegate.m */,
 				41D5EB8127D1B791005DCC58 /* SceneDelegate.h */,
 				41D5EB8227D1B791005DCC58 /* SceneDelegate.m */,
 				41D5EB8427D1B791005DCC58 /* ViewController.h */,
+				41D5EB8527D1B791005DCC58 /* ViewController.m */,
 				41D5EBB427D1B7C2005DCC58 /* CodeViewController.swift */,
 				41D5EBB627D1B7CF005DCC58 /* SwiftCode.swift */,
 				41D5EBB827D1B7DC005DCC58 /* SwiftController.swift */,
-				41D5EB8527D1B791005DCC58 /* ViewController.m */,
+				4155A16627D5E66000FFCD1F /* CrashDemoController.swift */,
+				4155A16727D5E66000FFCD1F /* CrashDemoController.xib */,
 				41D5EB8727D1B791005DCC58 /* Main.storyboard */,
 				41D5EB8A27D1B793005DCC58 /* Assets.xcassets */,
 				41D5EB8C27D1B793005DCC58 /* LaunchScreen.storyboard */,
@@ -301,6 +319,7 @@
 			files = (
 				41D5EB8E27D1B793005DCC58 /* LaunchScreen.storyboard in Resources */,
 				41D5EB8B27D1B793005DCC58 /* Assets.xcassets in Resources */,
+				4155A16927D5E66000FFCD1F /* CrashDemoController.xib in Resources */,
 				41D5EB8927D1B791005DCC58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,8 +486,10 @@
 				41D5EBB927D1B7DC005DCC58 /* SwiftController.swift in Sources */,
 				41D5EB8027D1B791005DCC58 /* AppDelegate.m in Sources */,
 				41D5EB9127D1B793005DCC58 /* main.m in Sources */,
+				4155A16D27D5F58500FFCD1F /* NSString+Demo.m in Sources */,
 				41D5EBB527D1B7C2005DCC58 /* CodeViewController.swift in Sources */,
 				41D5EBB727D1B7CF005DCC58 /* SwiftCode.swift in Sources */,
+				4155A16827D5E66000FFCD1F /* CrashDemoController.swift in Sources */,
 				41D5EB8327D1B791005DCC58 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,6 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5639DU29C;
@@ -659,8 +681,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shenzoom.SwiftCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenzoom.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCode/SwiftCode-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -676,6 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5639DU29C;
@@ -691,8 +715,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shenzoom.SwiftCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenzoom.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCode/SwiftCode-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
