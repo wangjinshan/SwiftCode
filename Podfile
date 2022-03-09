@@ -19,5 +19,6 @@ target 'SwiftCode' do
 pod 'Masonry'
 pod 'ClipImageBrowser', :path => "submodules/ClipImageBrowser"
 pod 'OCImport', :path => "submodules/OCImport"
+pod 'AFNetworking'
 
 end

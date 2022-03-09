@@ -1,16 +1,33 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - ClipImageBrowser (0.0.1)
   - Masonry (1.1.0)
   - OCImport (0.0.1):
     - Masonry
 
 DEPENDENCIES:
+  - AFNetworking
   - ClipImageBrowser (from `submodules/ClipImageBrowser`)
   - Masonry
   - OCImport (from `submodules/OCImport`)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - Masonry
 
 EXTERNAL SOURCES:
@@ -20,10 +37,11 @@ EXTERNAL SOURCES:
     :path: submodules/OCImport
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   ClipImageBrowser: 8f9ef21b27bd59f0771ba7fb52c49115ed39cbdf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCImport: f96ece08ce05fbcb9721d6d98cb8a4c404ab86cf
 
-PODFILE CHECKSUM: 5a5f4a30c0e8a616c244007b995fdd7404a4e254
+PODFILE CHECKSUM: 584a72f7704d21ef46a900966240182e0776fad5
 
 COCOAPODS: 1.11.2
