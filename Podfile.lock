@@ -18,17 +18,35 @@ PODS:
   - Masonry (1.1.0)
   - OCImport (0.0.1):
     - Masonry
+  - SensorsAnalyticsSDK (4.2.3):
+    - SensorsAnalyticsSDK/Core (= 4.2.3)
+  - SensorsAnalyticsSDK/__Store (4.2.3)
+  - SensorsAnalyticsSDK/AutoTrack (4.2.3):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Base (4.2.3):
+    - SensorsAnalyticsSDK/__Store
+  - SensorsAnalyticsSDK/Common (4.2.3):
+    - SensorsAnalyticsSDK/Extension
+  - SensorsAnalyticsSDK/Core (4.2.3):
+    - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Visualized
+  - SensorsAnalyticsSDK/Extension (4.2.3):
+    - SensorsAnalyticsSDK/Base
+  - SensorsAnalyticsSDK/Visualized (4.2.3):
+    - SensorsAnalyticsSDK/AutoTrack
 
 DEPENDENCIES:
   - AFNetworking
   - ClipImageBrowser (from `submodules/ClipImageBrowser`)
   - Masonry
   - OCImport (from `submodules/OCImport`)
+  - SensorsAnalyticsSDK
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - SensorsAnalyticsSDK
 
 EXTERNAL SOURCES:
   ClipImageBrowser:
@@ -41,7 +59,8 @@ SPEC CHECKSUMS:
   ClipImageBrowser: 8f9ef21b27bd59f0771ba7fb52c49115ed39cbdf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCImport: f96ece08ce05fbcb9721d6d98cb8a4c404ab86cf
+  SensorsAnalyticsSDK: e06584f75c13d39932da97627ba5dfd7c99f12d4
 
-PODFILE CHECKSUM: 584a72f7704d21ef46a900966240182e0776fad5
+PODFILE CHECKSUM: 26e5dbcae9499e11652c4f6cde9be2ab9a07a655
 
 COCOAPODS: 1.11.2

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Masonry
 
 class SwiftController: UIViewController {
     
