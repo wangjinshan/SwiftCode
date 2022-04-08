@@ -34,6 +34,17 @@ PODS:
     - SensorsAnalyticsSDK/Base
   - SensorsAnalyticsSDK/Visualized (4.2.3):
     - SensorsAnalyticsSDK/AutoTrack
+  - ZIKRouter/ServiceRouter (1.1.1)
+  - ZIKRouter/ViewRouter (1.1.1):
+    - ZIKRouter/ServiceRouter
+  - ZRouter (1.1.1):
+    - ZRouter/ServiceRouter (= 1.1.1)
+    - ZRouter/ViewRouter (= 1.1.1)
+  - ZRouter/ServiceRouter (1.1.1):
+    - ZIKRouter/ServiceRouter (>= 1.1.1)
+  - ZRouter/ViewRouter (1.1.1):
+    - ZIKRouter/ViewRouter (>= 1.1.1)
+    - ZRouter/ServiceRouter
 
 DEPENDENCIES:
   - AFNetworking
@@ -41,12 +52,15 @@ DEPENDENCIES:
   - Masonry
   - OCImport (from `submodules/OCImport`)
   - SensorsAnalyticsSDK
+  - ZRouter (>= 1.1.1)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
     - SensorsAnalyticsSDK
+    - ZIKRouter
+    - ZRouter
 
 EXTERNAL SOURCES:
   ClipImageBrowser:
@@ -60,7 +74,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OCImport: f96ece08ce05fbcb9721d6d98cb8a4c404ab86cf
   SensorsAnalyticsSDK: e06584f75c13d39932da97627ba5dfd7c99f12d4
+  ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
+  ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: 26e5dbcae9499e11652c4f6cde9be2ab9a07a655
+PODFILE CHECKSUM: 995df79aa193a7c59aff4c6057df7cf9b379f54d
 
 COCOAPODS: 1.11.2

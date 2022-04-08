@@ -2,3 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-SwiftCode-SwiftCodeUITests/Pods-SwiftCode
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/SensorsAnalyticsSDK/SensorsAnalyticsSDK.framework
+${BUILT_PRODUCTS_DIR}/ZIKRouter/ZIKRouter.framework
+${BUILT_PRODUCTS_DIR}/ZRouter/ZRouter.framework

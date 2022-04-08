@@ -22,4 +22,6 @@ pod 'OCImport', :path => "submodules/OCImport"
 pod 'AFNetworking'
 pod 'SensorsAnalyticsSDK'
 
+pod 'ZRouter', '>= 1.1.1'
+
 end

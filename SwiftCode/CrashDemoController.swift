@@ -20,6 +20,11 @@ class CrashDemoController: UIViewController {
         }
         tableview.delegate = self
         tableview.dataSource = self
+        
+        let demo = OptionalsDemo()
+        demo.play(name: "金山") { age in
+            print(age)
+        }
     }
 }
 
@@ -30,6 +35,16 @@ extension CrashDemoController: UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+}
+
+protocol OptionalsProtocol {
+    func play<T>(name: T, completion: ((T) -> Void))
+}
+
+class OptionalsDemo: OptionalsProtocol {
+    func play<T>(name: T, completion: ((T) -> Void)) {
+       completion(name)
     }
 }
 

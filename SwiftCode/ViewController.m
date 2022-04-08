@@ -21,7 +21,6 @@
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats: YES block:^(NSTimer * _Nonnull timer) {
        id temp = [self stringToAttributedString: @"dsacadfadW"];
-        NSLog(@"%@", temp);
     }];
 }
 
