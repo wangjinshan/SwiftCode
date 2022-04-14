@@ -19,13 +19,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats: YES block:^(NSTimer * _Nonnull timer) {
-       id temp = [self stringToAttributedString: @"dsacadfadW"];
-    }];
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    CrashDemoController *vc = [[CrashDemoController alloc] init];
+    ReloadDemoController *vc = [[ReloadDemoController alloc] init];
     [self presentViewController:vc animated:true completion:nil];
 }
 
