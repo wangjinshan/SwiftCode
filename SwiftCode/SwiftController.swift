@@ -18,13 +18,13 @@ class SwiftController: UIViewController {
 
 extension SwiftController {
     func setupUI() {
-        let button = UIButton()
+        let button = UILabel()
+        button.text = "asdasdafsafsfgagdfgadfgag"
         view.addSubview(button)
         button.backgroundColor = .yellow
         button.mas_makeConstraints { make in
             make?.left.equalTo()(20)
             make?.top.equalTo()(100)
-            make?.width.equalTo()(100)
             make?.height.equalTo()(100)
         }
         
@@ -32,18 +32,19 @@ extension SwiftController {
         button2.backgroundColor = .blue
         view.addSubview(button2)
         button2.mas_makeConstraints { make in
-            make?.left.mas_equalTo()(button.mas_right)?.equalTo()(20)
+            make?.left.equalTo()(button.mas_right)?.setOffset(0)
             make?.top.height().mas_equalTo()(button)
-            make?.right.mas_equalTo()(button)?.multipliedBy()(2)
+            make?.width.equalTo()(0)
         }
         
         let button3 = UIButton()
         button3.backgroundColor = .brown
         view.addSubview(button3)
         button3.mas_makeConstraints { make in
-            make?.left.equalTo()(button)
-            make?.top.equalTo()(button.mas_bottom)?.setOffset(20)
-            make?.width.height().equalTo()(button)
+            make?.left.equalTo()(button2.mas_right)?.setOffset(4)
+            make?.height.top().equalTo()(button)
+            make?.right.lessThanOrEqualTo()(-10)
+            make?.width.equalTo()(55)
         }
     }
 }

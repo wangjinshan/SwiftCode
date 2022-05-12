@@ -23,7 +23,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    ReloadDemoController *vc = [[ReloadDemoController alloc] init];
+    SwiftController *vc = [[SwiftController alloc] init];
     [self presentViewController:vc animated:true completion:nil];
 }
 

@@ -10,6 +10,9 @@
 		2D0F41F4700265E8963F734C /* Pods_SwiftCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57877B63AB5420E4A0C8413D /* Pods_SwiftCodeTests.framework */; };
 		4141E8B32807D86300777E8C /* ReloadDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141E8B12807D86300777E8C /* ReloadDemoController.swift */; };
 		4141E8B42807D86300777E8C /* ReloadDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4141E8B22807D86300777E8C /* ReloadDemoController.xib */; };
+		4141E8BB280D377800777E8C /* ReloadCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141E8B9280D377800777E8C /* ReloadCollectionController.swift */; };
+		4141E8BC280D377800777E8C /* ReloadCollectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4141E8BA280D377800777E8C /* ReloadCollectionController.xib */; };
+		4141E8BE280D3FB400777E8C /* UICollectionView+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141E8BD280D3FB400777E8C /* UICollectionView+Core.swift */; };
 		4155A16827D5E66000FFCD1F /* CrashDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155A16627D5E66000FFCD1F /* CrashDemoController.swift */; };
 		4155A16927D5E66000FFCD1F /* CrashDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4155A16727D5E66000FFCD1F /* CrashDemoController.xib */; };
 		4155A16D27D5F58500FFCD1F /* NSString+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4155A16C27D5F58500FFCD1F /* NSString+Demo.m */; };
@@ -51,6 +54,9 @@
 		004CE4F72E002A4745B9C892 /* Pods-SwiftCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCode.debug.xcconfig"; path = "Target Support Files/Pods-SwiftCode/Pods-SwiftCode.debug.xcconfig"; sourceTree = "<group>"; };
 		4141E8B12807D86300777E8C /* ReloadDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadDemoController.swift; sourceTree = "<group>"; };
 		4141E8B22807D86300777E8C /* ReloadDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReloadDemoController.xib; sourceTree = "<group>"; };
+		4141E8B9280D377800777E8C /* ReloadCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadCollectionController.swift; sourceTree = "<group>"; };
+		4141E8BA280D377800777E8C /* ReloadCollectionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReloadCollectionController.xib; sourceTree = "<group>"; };
+		4141E8BD280D3FB400777E8C /* UICollectionView+Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Core.swift"; sourceTree = "<group>"; };
 		4155A16627D5E66000FFCD1F /* CrashDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashDemoController.swift; sourceTree = "<group>"; };
 		4155A16727D5E66000FFCD1F /* CrashDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrashDemoController.xib; sourceTree = "<group>"; };
 		4155A16B27D5F58500FFCD1F /* NSString+Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Demo.h"; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 			children = (
 				4141E8B12807D86300777E8C /* ReloadDemoController.swift */,
 				4141E8B22807D86300777E8C /* ReloadDemoController.xib */,
+				4141E8B9280D377800777E8C /* ReloadCollectionController.swift */,
+				4141E8BA280D377800777E8C /* ReloadCollectionController.xib */,
 			);
 			name = Reload;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 		41D5EB7D27D1B791005DCC58 /* SwiftCode */ = {
 			isa = PBXGroup;
 			children = (
+				4141E8BD280D3FB400777E8C /* UICollectionView+Core.swift */,
 				4141E8AC2807D83300777E8C /* Reload */,
 				4155A16A27D5F55400FFCD1F /* Extension */,
 				41D5EB7E27D1B791005DCC58 /* AppDelegate.h */,
@@ -333,6 +342,7 @@
 			files = (
 				41D5EB8E27D1B793005DCC58 /* LaunchScreen.storyboard in Resources */,
 				4141E8B42807D86300777E8C /* ReloadDemoController.xib in Resources */,
+				4141E8BC280D377800777E8C /* ReloadCollectionController.xib in Resources */,
 				41D5EB8B27D1B793005DCC58 /* Assets.xcassets in Resources */,
 				4155A16927D5E66000FFCD1F /* CrashDemoController.xib in Resources */,
 				41D5EB8927D1B791005DCC58 /* Main.storyboard in Resources */,
@@ -500,9 +510,11 @@
 				41D5EB8627D1B791005DCC58 /* ViewController.m in Sources */,
 				41D5EBB927D1B7DC005DCC58 /* SwiftController.swift in Sources */,
 				41D5EB8027D1B791005DCC58 /* AppDelegate.m in Sources */,
+				4141E8BB280D377800777E8C /* ReloadCollectionController.swift in Sources */,
 				41D5EB9127D1B793005DCC58 /* main.m in Sources */,
 				4155A16D27D5F58500FFCD1F /* NSString+Demo.m in Sources */,
 				41D5EBB527D1B7C2005DCC58 /* CodeViewController.swift in Sources */,
+				4141E8BE280D3FB400777E8C /* UICollectionView+Core.swift in Sources */,
 				41D5EBB727D1B7CF005DCC58 /* SwiftCode.swift in Sources */,
 				4141E8B32807D86300777E8C /* ReloadDemoController.swift in Sources */,
 				4155A16827D5E66000FFCD1F /* CrashDemoController.swift in Sources */,

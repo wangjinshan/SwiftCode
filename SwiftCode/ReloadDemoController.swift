@@ -29,23 +29,30 @@ class ReloadDemoController: UIViewController {
     
     func reload() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.data = ["1", "2"]
+//            self.data = ["1", "2"]
+//            self.tableview.reloadData()
+//            self.data = ["1"]
             self.tableview.reloadData()
-            self.data = ["1"]
+            self.tableview.scrollToRow(at: IndexPath(item: 80, section: 0), at: .none, animated: true)
         }
     }
 }
 
 extension ReloadDemoController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(data.count)
+        return 100
         return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = "\(indexPath.row)"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ReloadCollectionController()
+        present(vc, animated: true, completion: nil)
     }
 }
 
