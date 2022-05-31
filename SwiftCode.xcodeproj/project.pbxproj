@@ -29,6 +29,7 @@
 		41D5EBB527D1B7C2005DCC58 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EBB427D1B7C2005DCC58 /* CodeViewController.swift */; };
 		41D5EBB727D1B7CF005DCC58 /* SwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EBB627D1B7CF005DCC58 /* SwiftCode.swift */; };
 		41D5EBB927D1B7DC005DCC58 /* SwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5EBB827D1B7DC005DCC58 /* SwiftController.swift */; };
+		41DF17952831F3CB005C27DB /* 1999.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 41DF17942831F3CB005C27DB /* 1999.MOV */; };
 		7D52FA619704203387D00B95 /* Pods_SwiftCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF53998F1FF67BAAE0D956D0 /* Pods_SwiftCode.framework */; };
 		902905E1CB37564FC1981EB5 /* Pods_SwiftCode_SwiftCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B254C1FF48BAC420C0613 /* Pods_SwiftCode_SwiftCodeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		41D5EBB427D1B7C2005DCC58 /* CodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		41D5EBB627D1B7CF005DCC58 /* SwiftCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCode.swift; sourceTree = "<group>"; };
 		41D5EBB827D1B7DC005DCC58 /* SwiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftController.swift; sourceTree = "<group>"; };
+		41DF17942831F3CB005C27DB /* 1999.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1999.MOV; sourceTree = "<group>"; };
 		57877B63AB5420E4A0C8413D /* Pods_SwiftCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CDCF3087DA54E20FCEB3B6 /* Pods-SwiftCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftCodeTests/Pods-SwiftCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CA73FA34A2209BD257DC03D /* Pods-SwiftCode-SwiftCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCode-SwiftCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftCode-SwiftCodeUITests/Pods-SwiftCode-SwiftCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		41D5EB7D27D1B791005DCC58 /* SwiftCode */ = {
 			isa = PBXGroup;
 			children = (
+				41E4596B283B651400E74C49 /* Utils */,
 				4141E8BD280D3FB400777E8C /* UICollectionView+Core.swift */,
 				4141E8AC2807D83300777E8C /* Reload */,
 				4155A16A27D5F55400FFCD1F /* Extension */,
@@ -191,6 +194,7 @@
 				41D5EBB627D1B7CF005DCC58 /* SwiftCode.swift */,
 				41D5EBB827D1B7DC005DCC58 /* SwiftController.swift */,
 				4155A16627D5E66000FFCD1F /* CrashDemoController.swift */,
+				41DF17942831F3CB005C27DB /* 1999.MOV */,
 				4155A16727D5E66000FFCD1F /* CrashDemoController.xib */,
 				41D5EB8727D1B791005DCC58 /* Main.storyboard */,
 				41D5EB8A27D1B793005DCC58 /* Assets.xcassets */,
@@ -217,6 +221,13 @@
 				41D5EBA627D1B794005DCC58 /* SwiftCodeUITestsLaunchTests.m */,
 			);
 			path = SwiftCodeUITests;
+			sourceTree = "<group>";
+		};
+		41E4596B283B651400E74C49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D70C1A077B767F52BB760D97 /* Frameworks */ = {
@@ -340,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DF17952831F3CB005C27DB /* 1999.MOV in Resources */,
 				41D5EB8E27D1B793005DCC58 /* LaunchScreen.storyboard in Resources */,
 				4141E8B42807D86300777E8C /* ReloadDemoController.xib in Resources */,
 				4141E8BC280D377800777E8C /* ReloadCollectionController.xib in Resources */,
@@ -704,6 +716,8 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_GENERATE_MAP_FILE = YES;
+				LD_MAP_FILE_PATH = /Users/wangjinshan/Documents/git/Code/SwiftCode/linkmap/linkmap.txt;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,6 +752,8 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_GENERATE_MAP_FILE = YES;
+				LD_MAP_FILE_PATH = /Users/wangjinshan/Documents/git/Code/SwiftCode/linkmap/linkmap.txt;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

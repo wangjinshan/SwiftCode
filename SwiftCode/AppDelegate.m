@@ -16,6 +16,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"1999" ofType:@"MOV"];
+    if(UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(path)){
+       UISaveVideoAtPathToSavedPhotosAlbum(path,nil,nil,nil);
+    }
     return YES;
 }
 

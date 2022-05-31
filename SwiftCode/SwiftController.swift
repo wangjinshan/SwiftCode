@@ -46,5 +46,18 @@ extension SwiftController {
             make?.right.lessThanOrEqualTo()(-10)
             make?.width.equalTo()(55)
         }
+        
+        let imageV = UIImageView()
+        imageV.backgroundColor = .red
+        imageV.contentMode = .scaleAspectFill
+        imageV.clipsToBounds = true
+        imageV.image = UIImage(named: "1999")
+        view.addSubview(imageV)
+        imageV.mas_makeConstraints { make in
+            make?.top.equalTo()(300)
+            make?.centerX.equalTo()
+            make?.width.equalTo()(200)
+            make?.height.equalTo()(100)
+        }
     }
 }
